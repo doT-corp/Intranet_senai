@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intranet SENAI-SP - Félix Guisard</title>
+    <link rel="stylesheet" href="./css/menus.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;500&display=swap" rel="stylesheet"> 
+    <link rel="shortcut icon" href="./img/favicon.png"> 
+</head>
+<body>
+    <header class="menu-top" id="top">
+        <div class="header-1">
+            <div class="logo">
+                <a href="#top">
+                    <img src="./img/senai_pb1.png">
+                </a>
+                   
+            </div>
+            <nav>
+                <ul>
+                    <form>
+                        <label for="email">
+                            <b>Buscar:</b>  
+                        </label>
+                        <input type="text" id="text" name="text"><br><br>
+                    </form>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--------lateral-------->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <br>
+        <a href="index.html">Voltar</a>
+        <br>
+      </div>
+      <div id="main">
+    
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; <b>Menu</b></span>
+      </div>
+      <!------Section------->
+    <section class="main_2">
+        <div class="sobre">
+            <h2 class="title" id="sobre">Cursos disponíveis</h2>
+        </div>
+        <div class="image">
+            <!--
+                <div class="myButton">
+                        <div class="op1" onclick="courses('op1', 'op1-about')">
+                            <img src="./img/Automacao.png" id="imag1">
+                        </div>
+                        <div class="op2">
+                            <img src="./img/Automacao.png" id="imag2">
+                        </div>
+                        <div class="op3">
+                            <img src="./img/Construcao Civil.png" id="imag3">
+                        </div>
+                        <div class="op4">
+                            <img src="./img/Eletronica.png" id="imag4">
+                        </div>
+                        <div class="op5">
+                            <img src="./img/Energia.png" id="imag5">
+                        </div>
+                        <div class="op6">
+                            <img src="./img/Gestao.png" id="imag6">
+                        </div>
+               <div class="inf">
+                        <div class="op7">
+                            <img src="./img/MeioAmbiente.png" id="imag7">
+                        </div>
+                        <div class="op8">
+                            <img src="./img/MetalMecanica.png" id="imag8">
+                        </div>
+                        <div class="op9">
+                            <img src="./img/Polimeros.png" id="imag9">
+                        </div>
+                        <div class="op10">
+                            <img src="./img/Seguranca.png" id="imag10">
+                        </div>
+                        <div class="op11">
+                            <img src="./img/Software.png" id="imag11">
+                        </div>
+                    </div>
+                </div>
+            -->
+                <button class="accordion">Automação</button>
+                <div class="op-about">  
+                    <h2>Automação da manufatura</h2>
+                    <ul>
+                        <li>
+                            AUTOMAÇÃO HIDRÁULICA INDUSTRIAL
+                            <div class="course-type-p">
+                                PRESENCIAL
+                            </div>
+                        </li>
+                        <li>
+                            AUTOMAÇÃO PNEUMÁTICA INDUSTRIAL
+                            <div class="course-type-p">
+                                PRESENCIAL
+                            </div>
+                        </li>
+                        <li>
+                            CLP SISTEMAS - STEP 7
+                            <div class="course-type-p">
+                                PRESENCIAL
+                            </div>
+                        </li>
+                        <li>
+                            CLP SISTEMAS - STEP 7 - AVANÇADO
+                            <div class="course-type-p">
+                                PRESENCIAL
+                            </div>
+                        </li>
+                        <li>
+                            DESVENDANDO A INDÚSTRIA 4.0
+                            <div class="course-type-d">
+                                A DISTÂNCIA 
+                            </div>
+                        </li>
+                        <li>
+                            FUNDAMENTOS DA ROBÓTICA INDUSTRIAL 
+                            <div class="course-type-p">
+                                PRESENCIAL
+                            </div>
+                        </li> 
+                    </ul>
+                    <h2>Mecatrônica</h2>
+                    <ul>
+                        <li>
+                            OPERAÇÃO EM ROBÔ INDUSTRIAL ABB - IRC5 
+                            <div class="course-type-p">
+                                PRESENCIAL
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button class="accordion">Autonomia</button>
+                <div class="op-about">  
+                    <h2>Mecânica</h2>
+                    <ul>
+                        <li>
+                            COMPETÊNCIA TRANSVERSAL - NOÇÕES BÁSICAS DE MECÂNICA AUTOMOTIVA
+                            <div class="course-type-d">
+                                A DISTÂNCIA
+                            </div>
+                        </li>
+                        <li>
+                            MECÂNICO AUXILIAR AUTOMOTIVO
+                            <div class="course-type-p">
+                                PRESENCIAL
+                            </div>
+                        </li>
+                        <li>
+                            MECÂNICO DE INJEÇÃO ELETRÔNICA
+                            <div class="course-type-p">
+                                PRESENCIAL
+                            </div>
+                        </li>
+                    </ul>
+                    <h2>Reparação</h2>
+                    <ul>
+                        <li>
+                            ELETRICISTA AUTOMOTIVO
+                            <div class="course-type-p">
+                                PRESENCIAL
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button class="accordion">Construção Civil</button>
+                <div class="op-about">  
+                    <h2>Edificações</h2>
+                    <ul>
+                        <li>
+                            AUTOCAD 2D APLICADO A CONSTRUÇÃO CIVIL
+                            <div class="course-type-p">
+                                PRESENCIAL
+                            </div>
+                        </li>
+                        <li>
+                            DESVENDANDO O BIM
+                            <div class="course-type-d">
+                                A DISTÂNCIA
+                            </div>
+                        </li>
+                        <li>
+                            REVIT ARCHITECTURE
+                            <div class="course-type-p">
+                                PRESENCIAL
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button class="accordion">Eletroeletrônica</button>
+                <div class="op-about">  
+                    <h2>Eletricidade</h2>
+                    <ul>
+                        <li>
+                            COMANDOS ELÉTRICOS
+                            <div class="course-type-p">
+                                PRESENCIAL
+                            </div>
+                        </li>
+                        <li>
+                            ELETRICISTA INSTALADOR
+                            <div class="course-type-p">
+                                PRESENCIAL
+                            </div>
+                        </li>
+                    </ul>
+                    <h2>Eletrônica</h2>
+                    <ul>
+                        <li>
+                            MICROCONTROLADOR ARDUINO
+                            <div class="course-type-p">
+                                PRESENCIAL
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button class="accordion">Gestão</button>
+                <div class="op-about">  
+                    <h2>Gestão da Produção</h2>
+                    <ul>
+                        <li>
+                            ECONOMIA CIRCULAR
+                            <div class="course-type-d">
+                                A DISTÂNCIA
+                            </div>
+                        </li>
+                    </ul>
+                    <h2>Gestão de RH</h2>
+                    <ul>
+                        <li>
+                            PREPARAÇÃO PARA O MUNDO DO TRABALHO
+                            <div class="course-type-d">
+                                A DISTÂNCIA
+                            </div>
+                        </li>
+                    </ul>
+                    <h2>Planejamento</h2>
+                    <ul>
+                        <li>
+                            COMPETÊNCIA TRANSVERSAL - FINANÇAS PESSOAIS
+                            <div class="course-type-d">
+                                A DISTÂNCIA
+                            </div>
+                        </li>
+                        <li>
+                            COMPETÊNCIA TRANSVERSAL - FUNDAMENTOS DE LOGÍSTICA
+                            <div class="course-type-d">
+                                A DISTÂNCIA
+                            </div>
+                        </li>
+                        <li>
+                            COMPETÊNCIA TRANSVERSAL - PROPRIEDADE INTELECTUAL
+                            <div class="course-type-d">
+                                A DISTÂNCIA
+                            </div>
+                        </li>
+                        <li>
+                            EMPREENDER SENAI
+                            <div class="course-type-d">
+                                A DISTÂNCIA
+                            </div>
+                        </li>
+                        <li>
+                            PRIVACIDADE E PROTEÇÃO DE DADOS (LGPD)
+                            <div class="course-type-d">
+                                A DISTÂNCIA
+                            </div>
+                        </li>
+                    </ul>
+                    <h2>Qualidade</h2>
+                    <ul>
+                        <li>
+                            BLACK BELT EM LEAN SEIS SIGMA
+                            <div class="course-type-p">
+                                PRESENCIAL
+                            </div>
+                        </li>
+                        <li>
+                            GREEN BELT EM LEAN SEIS SIGMA
+                            <div class="course-type-p">
+                                PRESENCIAL
+                            </div>
+                        </li>
+                        <li>
+                            YELLOW BELT EM LEAN SEIS SIGMA
+                            <div class="course-type-p">
+                                PRESENCIAL
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button class="accordion">Logística</button>
+                <div class="op-about">  
+                    <h2>Produção</h2>
+                    <ul>
+                        <li>
+                            CONTROLE DE PRODUÇÃO
+                            <div class="course-type-p">
+                                PRESENCIAL
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button class="accordion">Meio Ambiente</button>
+                <div class="op-about">  
+                    <h2>Controle Ambiental</h2>
+                    <ul>
+                        <li>
+                            COMPETÊNCIA TRANSVERSAL - EDUCAÇÃO AMBIENTAL
+                            <div class="course-type-d">
+                                A DISTÂNCIA
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button class="accordion">Metalmecânica</button>
+                <div class="op-about">  
+                    <h2>Fabricação Mecânica</h2>
+                    <ul>
+                        <li>
+                            FERRAMENTEIRO DE CONSTRUÇÃO DE MOLDES PARA PLÁSTICOS
+                            <div class="course-type-p">
+                                PRESENCIAL
+                            </div>
+                        </li>
+                        <li>
+                            FERRAMENTEIRO DE CORTE E DOBRA
+                            <div class="course-type-p">
+                                PRESENCIAL
+                            </div>
+                        </li>
+                        <li>
+                            OPERADOR DE MÁQUINAS DE USINAGEM CONVENCIONAIS
+                            <div class="course-type-p">
+                                PRESENCIAL
+                            </div>
+                        </li>
+                    </ul>
+                    <h2>Mecânica</h2>
+                    <ul>
+                        <li>
+                            AUXILIAR MECÂNICO DE MANUTENÇÃO
+                            <div class="course-type-p">
+                                PRESENCIAL
+                            </div>
+                        </li>
+                        <li>
+                            COMPETÊNCIA TRANSVERSAL - METROLOGIA
+                            <div class="course-type-d">
+                                A DISTÂNCIA
+                            </div>
+                        </li>
+                        <li>
+                            INSPETOR DE QUALIDADE
+                            <div class="course-type-p">
+                                PRESENCIAL
+                            </div>
+                        </li>
+                        <li>
+                            INVENTOR
+                            <div class="course-type-p">
+                                PRESENCIAL
+                            </div>
+                        </li>
+                        <li>
+                            PROGRAMAÇÃO E IMPRESSÃO 3D
+                            <div class="course-type-p">
+                                PRESENCIAL
+                            </div>
+                        </li>
+                        <li>
+                            PROGRAMAÇÃO, PREPARAÇÃO E OPERAÇÃO DE CENTRO DE USINAGEM CNC
+                            <div class="course-type-p">
+                                PRESENCIAL
+                            </div>
+                        </li>
+                        <li>
+                            PROGRAMAÇÃO, PREPARAÇÃO E OPERAÇÃO DE TORNO CNC
+                            <div class="course-type-p">
+                                PRESENCIAL
+                            </div>
+                        </li>
+                    </ul>
+                    <h2>Metalurgia</h2>
+                    <ul>
+                        <li>
+                            CALDEIREIRO INDUSTRIAL
+                            <div class="course-type-p">
+                                PRESENCIAL
+                            </div>
+                        </li>
+                        <li>
+                            CALDEIREIRO MONTADOR
+                            <div class="course-type-p">
+                                PRESENCIAL
+                            </div>
+                        </li>
+                        <li>
+                            CALDEIREIRO TRAÇADOR
+                            <div class="course-type-p">
+                                PRESENCIAL
+                            </div>
+                        </li>
+                        <li>
+                            SOLDADOR AO ARCO ELÉTRICO - MAG
+                            <div class="course-type-p">
+                                PRESENCIAL
+                            </div>
+                        </li>
+                        <li>
+                            SOLDADOR AO ARCO ELÉTRICO - TIG
+                            <div class="course-type-p">
+                                PRESENCIAL
+                            </div>
+                        </li>
+                        <li>
+                            SOLDADOR AO ARCO ELÉTRICO E OXIGÁS
+                            <div class="course-type-p">
+                                PRESENCIAL
+                            </div>
+                        </li>
+                        <li>
+                            SOLDAGEM ELETRODO REVESTIDO EM AÇO CARBONO
+                            <div class="course-type-p">
+                                PRESENCIAL
+                            </div>
+                        </li>
+                        <li>
+                            SOLDAGEM MAG EM AÇO CARBONO
+                            <div class="course-type-p">
+                                PRESENCIAL
+                            </div>
+                        </li>
+                        <li>
+                            TÉCNICAS DE SOLDAGEM APLICADAS À SERRALHERIA
+                            <div class="course-type-p">
+                                PRESENCIAL
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button class="accordion">Polímeros</button>
+                <div class="op-about">  
+                    <h2>Plásticos</h2>
+                    <ul>
+                        <li>
+                            OPERAÇÃO E PROGRAMAÇÃO DE IMPRESSORA 3D
+                            <div class="course-type-p">
+                                PRESENCIAL
+                            </div>
+                        </li>
+                        <li>
+                            OPERADOR DE INJETORAS PARA TERMOPLÁSTICOS
+                            <div class="course-type-p">
+                                PRESENCIAL
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button class="accordion">Segurança no Trabalho</button>
+                <div class="op-about">  
+                    <h2>Saúde e Segurança no Trabalho</h2>
+                    <ul>
+                        <li>
+                            COMPETÊNCIA TRANSVERSAL - SEGURANÇA NO TRABALHO
+                            <div class="course-type-d">
+                                A DISTÂNCIA
+                            </div>
+                        </li>
+                        <li>
+                            NR-11 - OPERAÇÃO DE EMPILHADEIRA
+                            <div class="course-type-p">
+                                PRESENCIAL
+                            </div>
+                        </li>
+                        <li>
+                            SEGURANÇA EM INSTALAÇÕES E SERVIÇOS EM ELETRICIDADE - NR10
+                            <div class="course-type-p">
+                                PRESENCIAL
+                            </div>
+                        </li>
+                        <li>
+                            SEGURANÇA EM INSTALAÇÕES E SERVIÇOS EM ELETRICIDADE - NR10 - RECICLAGEM
+                            <div class="course-type-p">
+                                PRESENCIAL
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button class="accordion">Tecnologia da Informação</button>
+                <div class="op-about" style="border-bottom-right-radius: 20px; border-bottom-left-radius: 20px;">  
+                    <h2>Software</h2>
+                    <ul>
+                        <li>
+                            AUTO CAD 2D
+                            <div class="course-type-p">
+                                PRESENCIAL
+                            </div>
+                        </li>
+                        <li>
+                            AUTO CAD 3D
+                            <div class="course-type-p">
+                                PRESENCIAL
+                            </div>
+                        </li>
+                        <li>
+                            COMPETÊNCIA TRANSVERSAL - LÓGICA DE PROGRAMAÇÃO
+                            <div class="course-type-d">
+                                A DISTÂNCIA
+                            </div>
+                        </li>
+                        <li>
+                            COMPETÊNCIA TRANSVERSAL - TECNOLOGIA DA INFORMAÇÃO E COMUNICAÇÃO
+                            <div class="course-type-d">
+                                A DISTÂNCIA
+                            </div>
+                        </li>
+                        <li>
+                            DESVENDANDO A BLOCKCHAIN
+                            <div class="course-type-d">
+                                A DISTÂNCIA
+                            </div>
+                        </li>
+                        <li>
+                            EXCEL BÁSICO
+                            <div class="course-type-d">
+                                A DISTÂNCIA
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="animacao">
+                    <img class="i1" src="./img/anim.gif" id="animated">
+                    <img class="i2" src="./img/6e4b68fb114c6faec931b6197e483a033931d53d_hq.gif" id="animated">
+                    <img class="i3" src="./img/profissao124.gif" id="animated">
+                </div>
+                <div class="imag">
+                    <h2 class="title" id="sobre">
+                        <br><br>
+                        Anúncio
+                    </h2>
+                </div>
+                <div class="carrossel">
+                    <ul>
+                        <li>
+                            <img src="./img/imageViewer.png">
+                        </li>
+                        <li>
+                            <img src="./img/you.png">
+                        </li>
+                        <li>
+                            <img src="./img/view.png">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+      </section>
+      <!----footer-->
+      <div class="footer">
+        <div class="container">
+            <div class="row1">
+                <div class="footer-col-1">
+                    <h3>
+                        Escola Senai "Felix Guisard"
+                    </h3>
+                    <p>
+                        Av. Independência, 846 - Independência - Taubaté/SP - CEP 12031-001
+Telefone: (12) 3609-5701<br> |E-mail:senaitaubate@sp.senai.br
+                    </p>
+                    <br><br>
+                    <p>
+                        Feito por Victor da Silva Santos, Guilherme Samuel, Diego Augusto, Diego Artur
+                    </p>
+                </div>
+                <div class="footer-col-2">
+                    <a href="#top">
+                        <img src="./img/senai_pb1.png" alt="SENAI">
+                    </a>
+                </div>
+                <div class="footer-col-3">
+                    <h3>
+                        Nos Siga!
+                        <br><br>
+                    </h3>
+                    <ul>
+                        <li>
+                            <a href="https://www.instagram.com/senaitaubate/">
+                                <img src="./img/instagram-icon (1).png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/senaitaubate">
+                                <img src="./img/001-simbolo-de-aplicativo-do-facebook.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/senai_taubate">
+                                <img src="./img/001-twitter.png">
+                            </a>
+                        </li>
+                   </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--javaScript-->
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "white";
+        }
+        
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+            document.body.style.backgroundColor = "white";
+        }
+
+        //Função para abrir a aba de sessões do curso
+
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+               
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+            });
+        } 
+
+    </script>
+</body>
+</html>
