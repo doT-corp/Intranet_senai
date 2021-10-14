@@ -44,6 +44,7 @@ a {
 body {
     font-family: 'Jost', sans-serif;
     transition: background-color .5s;
+    display: flex;
   }
   
   .sidenav {
@@ -94,9 +95,8 @@ body {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
-  .image{
-    text-align: center;
-    
+  .design_left{
+    width: 100%;
   }
   .title{
     text-align: center;
@@ -209,4 +209,11 @@ ul{
   .image {
     margin-left: 30px;
   }
+}
+
+.design-lateral{
+  
+    position: fixed;
+    top: 0;
+    left: 100%;
 }
