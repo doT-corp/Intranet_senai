@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;500&display=swap" rel="stylesheet"> 
-    <link rel="shortcut icon" href="./img/favicon.png"> 
+    <link rel="shortcut icon" href="./img/favicon.png">
 </head>
 <body>
     <header class="menu-top" id="top">
@@ -21,7 +21,6 @@
                 <a href="#top">
                     <img src="./img/senai_pb1.png">
                 </a>
-                   
             </div>
             <nav>
                 <ul>
@@ -29,7 +28,7 @@
                         <label for="email">
                             <b>Buscar:</b>  
                         </label>
-                        <input type="text" id="text" name="text"><br><br>
+                        <input type="text" id="searchBox" onkeyup="searching();" name="text"><br><br>
                     </form>
                 </ul>
             </nav>
@@ -49,7 +48,7 @@
       <!------Section------->
     <section class="main_2">
         <div class="sobre">
-            <h2 class="title" id="sobre">Cursos</h2>
+            <h2 class="title" id="sobre">Cursos disponíveis</h2>
         </div>
         <div class="image">
             <!--
@@ -91,422 +90,442 @@
                     </div>
                 </div>
             -->
-                <button class="accordion">Automação Hidráulica Industrial</button>
-                <div class="op-about">
-                    <h2>Turmas</h2>
-                    <ul>
-                        <li>
-                            T1A
-                            <div class="course-type-p">
-                                PRESENCIAL
-                            </div>
-                        </li>
-                        <li>
-                            T2A
-                            <div class="course-type-p">
-                                PRESENCIAL
-                            </div>
-                        </li>
-                        <li>
-                            T3A
-                            <div class="course-type-p">
-                                PRESENCIAL
-                            </div>
-                        </li>
-                        <li>
-                            T4A
-                            <div class="course-type-p">
-                                PRESENCIAL
-                            </div>
-                        </li>
-                        <li>
-                            T1B
-                            <div class="course-type-d">
-                                A DISTÂNCIA 
-                            </div>
-                        </li>
-                        <li>
-                            T2B
-                            <div class="course-type-p">
-                                PRESENCIAL
-                            </div>
-                        </li> 
-                    </ul>
-    
+                <div class="the_course">
+                    <button class="accordion">Automação Hidráulica Industrial</button>
+                    <div class="op-about">
+                        <h2>Turmas</h2>
+                        <ul>
+                            <li>
+                                T1A
+                                <div class="course-type-p">
+                                    PRESENCIAL
+                                </div>
+                            </li>
+                            <li>
+                                T2A
+                                <div class="course-type-p">
+                                    PRESENCIAL
+                                </div>
+                            </li>
+                            <li>
+                                T3A
+                                <div class="course-type-p">
+                                    PRESENCIAL
+                                </div>
+                            </li>
+                            <li>
+                                T4A
+                                <div class="course-type-p">
+                                    PRESENCIAL
+                                </div>
+                            </li>
+                            <li>
+                                T1B
+                                <div class="course-type-d">
+                                    A DISTÂNCIA 
+                                </div>
+                            </li>
+                            <li>
+                                T2B
+                                <div class="course-type-p">
+                                    PRESENCIAL
+                                </div>
+                            </li> 
+                        </ul>
+                    </div>
                 </div>
-                <button class="accordion">Mecânico de Injeção</button>
-                <div class="op-about">  
-                    <h2>Turmas</h2>
-                    <ul>
-                        <li>
-                            M1A
-                            <div class="course-type-d">
-                                A DISTÂNCIA
-                            </div>
-                        </li>
-                        <li>
-                            M2A
-                            <div class="course-type-p">
-                                PRESENCIAL
-                            </div>
-                        </li>
-                        <li>
-                            M3A
-                            <div class="course-type-p">
-                                PRESENCIAL
-                            </div>
-                        </li>
-                    </ul>
+                <div class="the_course">
+                    <button class="accordion">Mecânico de Injeção</button>
+                    <div class="op-about">  
+                        <h2>Turmas</h2>
+                        <ul>
+                            <li>
+                                M1A
+                                <div class="course-type-d">
+                                    A DISTÂNCIA
+                                </div>
+                            </li>
+                            <li>
+                                M2A
+                                <div class="course-type-p">
+                                    PRESENCIAL
+                                </div>
+                            </li>
+                            <li>
+                                M3A
+                                <div class="course-type-p">
+                                    PRESENCIAL
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <button class="accordion">Revit Architecture</button>
-                <div class="op-about">
-                    <h2>Turmas</h2>  
-                    <ul>
-                        <li>
-                           T1C
-                            <div class="course-type-p">
-                                PRESENCIAL
-                            </div>
-                        </li>
-                        <li>
-                            T2C
-                            <div class="course-type-d">
-                                A DISTÂNCIA
-                            </div>
-                        </li>
-                        <li>
-                            T3C
-                            <div class="course-type-p">
-                                PRESENCIAL
-                            </div>
-                        </li>
-                    </ul>
+                <div class="the_course">
+                    <button class="accordion">Revit Architecture</button>
+                    <div class="op-about">
+                        <h2>Turmas</h2>  
+                        <ul>
+                            <li>
+                               T1C
+                                <div class="course-type-p">
+                                    PRESENCIAL
+                                </div>
+                            </li>
+                            <li>
+                                T2C
+                                <div class="course-type-d">
+                                    A DISTÂNCIA
+                                </div>
+                            </li>
+                            <li>
+                                T3C
+                                <div class="course-type-p">
+                                    PRESENCIAL
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <button class="accordion">Eletricista Instalador</button>
-                <div class="op-about">
-                    <h2>Turmas</h2>
-                    <ul>
-                        <li>
-                            M1B
-                            <div class="course-type-p">
-                                PRESENCIAL
-                            </div>
-                        </li>
-                        <li>
-                            M2B
-                            <div class="course-type-p">
-                                PRESENCIAL
-                            </div>
-                        </li>
-                        <li>
-                            M3B
-                            <div class="course-type-p">
-                                PRESENCIAL
-                            </div>
-                        </li>
-                    </ul>
+                <div class="the_course">
+                    <button class="accordion">Eletricista Instalador</button>
+                    <div class="op-about">
+                        <h2>Turmas</h2>
+                        <ul>
+                            <li>
+                                M1B
+                                <div class="course-type-p">
+                                    PRESENCIAL
+                                </div>
+                            </li>
+                            <li>
+                                M2B
+                                <div class="course-type-p">
+                                    PRESENCIAL
+                                </div>
+                            </li>
+                            <li>
+                                M3B
+                                <div class="course-type-p">
+                                    PRESENCIAL
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <button class="accordion">Gestão de Produção</button>
-                <div class="op-about">
-                    <h2>Turmas</h2>  
-                    <ul>
-                        <li>
-                            T1D
-                            <div class="course-type-d">
-                                A DISTÂNCIA
-                            </div>
-                        </li>
-                        <li>
-                            T2D
-                            <div class="course-type-d">
-                                A DISTÂNCIA
-                            </div>
-                        </li>
-                        <li>
-                            T3D
-                            <div class="course-type-d">
-                                A DISTÂNCIA
-                            </div>
-                        </li>
-                        <li>
-                            T4D
-                            <div class="course-type-d">
-                                A DISTÂNCIA
-                            </div>
-                        </li>
-                        <li>
-                            M1C
-                            <div class="course-type-d">
-                                A DISTÂNCIA
-                            </div>
-                        </li>
-                        <li>
-                            M2C
-                            <div class="course-type-d">
-                                A DISTÂNCIA
-                            </div>
-                        </li>
-                        <li>
-                            M3C
-                            <div class="course-type-d">
-                                A DISTÂNCIA
-                            </div>
-                        </li>
-                        <li>
-                            M4C
-                            <div class="course-type-p">
-                                PRESENCIAL
-                            </div>
-                        </li>
-                        <li>
-                            T1E
-                            <div class="course-type-p">
-                                PRESENCIAL
-                            </div>
-                        </li>
-                        <li>
-                            T2E
-                            <div class="course-type-p">
-                                PRESENCIAL
-                            </div>
-                        </li>
-                    </ul>
+                <div class="the_course">
+                    <button class="accordion">Gestão de Produção</button>
+                    <div class="op-about">
+                        <h2>Turmas</h2>  
+                        <ul>
+                            <li>
+                                T1D
+                                <div class="course-type-d">
+                                    A DISTÂNCIA
+                                </div>
+                            </li>
+                            <li>
+                                T2D
+                                <div class="course-type-d">
+                                    A DISTÂNCIA
+                                </div>
+                            </li>
+                            <li>
+                                T3D
+                                <div class="course-type-d">
+                                    A DISTÂNCIA
+                                </div>
+                            </li>
+                            <li>
+                                T4D
+                                <div class="course-type-d">
+                                    A DISTÂNCIA
+                                </div>
+                            </li>
+                            <li>
+                                M1C
+                                <div class="course-type-d">
+                                    A DISTÂNCIA
+                                </div>
+                            </li>
+                            <li>
+                                M2C
+                                <div class="course-type-d">
+                                    A DISTÂNCIA
+                                </div>
+                            </li>
+                            <li>
+                                M3C
+                                <div class="course-type-d">
+                                    A DISTÂNCIA
+                                </div>
+                            </li>
+                            <li>
+                                M4C
+                                <div class="course-type-p">
+                                    PRESENCIAL
+                                </div>
+                            </li>
+                            <li>
+                                T1E
+                                <div class="course-type-p">
+                                    PRESENCIAL
+                                </div>
+                            </li>
+                            <li>
+                                T2E
+                                <div class="course-type-p">
+                                    PRESENCIAL
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <button class="accordion">Controle de Produção</button>
-                <div class="op-about"> 
-                    <h2>Turmas</h2>
-                    <ul>
-                        <li>
-                            M1D
-                            <div class="course-type-p">
-                                PRESENCIAL
-                            </div>
-                        </li>
-                    </ul>
+                <div class="the_course">
+                    <button class="accordion">Controle de Produção</button>
+                    <div class="op-about"> 
+                        <h2>Turmas</h2>
+                        <ul>
+                            <li>
+                                M1D
+                                <div class="course-type-p">
+                                    PRESENCIAL
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <button class="accordion">Educação Ambiental</button>
-                <div class="op-about">
-                    <h2>Turmas</h2>
-                    <ul>
-                        <li>
-                            M2D
-                            <div class="course-type-d">
-                                A DISTÂNCIA
-                            </div>
-                        </li>
-                    </ul>
+                <div class="the_course">
+                    <button class="accordion">Educação Ambiental</button>
+                    <div class="op-about">
+                        <h2>Turmas</h2>
+                        <ul>
+                            <li>
+                                M2D
+                                <div class="course-type-d">
+                                    A DISTÂNCIA
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <button class="accordion">Ferramenteiro de Corte e Dobra</button>
-                <div class="op-about">
-                    <h2>Turmas</h2>  
-                    <ul>
-                        <li>
-                            M3D
-                            <div class="course-type-p">
-                                PRESENCIAL
-                            </div>
-                        </li>
-                        <li>
-                            M4D
-                            <div class="course-type-p">
-                                PRESENCIAL
-                            </div>
-                        </li>
-                        <li>
-                            T1F
-                            <div class="course-type-p">
-                                PRESENCIAL
-                            </div>
-                        </li>
-                        <li>
-                            T2F
-                            <div class="course-type-p">
-                                PRESENCIAL
-                            </div>
-                        </li>
-                        <li>
-                            T3F
-                            <div class="course-type-d">
-                                A DISTÂNCIA
-                            </div>
-                        </li>
-                        <li>
-                           T4F
-                            <div class="course-type-p">
-                                PRESENCIAL
-                            </div>
-                        </li>
-                        <li>
-                            M1E
-                            <div class="course-type-p">
-                                PRESENCIAL
-                            </div>
-                        </li>
-                        <li>
-                            M2E
-                            <div class="course-type-p">
-                                PRESENCIAL
-                            </div>
-                        </li>
-                        <li>
-                            M3E
-                            <div class="course-type-p">
-                                PRESENCIAL
-                            </div>
-                        </li>
-                        <li>
-                           M4E
-                            <div class="course-type-p">
-                                PRESENCIAL
-                            </div>
-                        </li>
-                        <li>
-                            T1G
-                            <div class="course-type-p">
-                                PRESENCIAL
-                            </div>
-                        </li>
-                        <li>
-                            T2G
-                            <div class="course-type-p">
-                                PRESENCIAL
-                            </div>
-                        </li>
-                        <li>
-                            T3G
-                            <div class="course-type-p">
-                                PRESENCIAL
-                            </div>
-                        </li>
-                        <li>
-                            T4G
-                            <div class="course-type-p">
-                                PRESENCIAL
-                            </div>
-                        </li>
-                        <li>
-                            M1F
-                            <div class="course-type-p">
-                                PRESENCIAL
-                            </div>
-                        </li>
-                        <li>
-                            M2F
-                            <div class="course-type-p">
-                                PRESENCIAL
-                            </div>
-                        </li>
-                        <li>
-                            M3F
-                            <div class="course-type-p">
-                                PRESENCIAL
-                            </div>
-                        </li>
-                        <li>
-                            M4F
-                            <div class="course-type-p">
-                                PRESENCIAL
-                            </div>
-                        </li>
-                        <li>
-                            T1H
-                            <div class="course-type-p">
-                                PRESENCIAL
-                            </div>
-                        </li>
-                    </ul>
+                <div class="the_course">
+                    <button class="accordion">Ferramenteiro de Corte e Dobra</button>
+                    <div class="op-about">
+                        <h2>Turmas</h2>  
+                        <ul>
+                            <li>
+                                M3D
+                                <div class="course-type-p">
+                                    PRESENCIAL
+                                </div>
+                            </li>
+                            <li>
+                                M4D
+                                <div class="course-type-p">
+                                    PRESENCIAL
+                                </div>
+                            </li>
+                            <li>
+                                T1F
+                                <div class="course-type-p">
+                                    PRESENCIAL
+                                </div>
+                            </li>
+                            <li>
+                                T2F
+                                <div class="course-type-p">
+                                    PRESENCIAL
+                                </div>
+                            </li>
+                            <li>
+                                T3F
+                                <div class="course-type-d">
+                                    A DISTÂNCIA
+                                </div>
+                            </li>
+                            <li>
+                               T4F
+                                <div class="course-type-p">
+                                    PRESENCIAL
+                                </div>
+                            </li>
+                            <li>
+                                M1E
+                                <div class="course-type-p">
+                                    PRESENCIAL
+                                </div>
+                            </li>
+                            <li>
+                                M2E
+                                <div class="course-type-p">
+                                    PRESENCIAL
+                                </div>
+                            </li>
+                            <li>
+                                M3E
+                                <div class="course-type-p">
+                                    PRESENCIAL
+                                </div>
+                            </li>
+                            <li>
+                               M4E
+                                <div class="course-type-p">
+                                    PRESENCIAL
+                                </div>
+                            </li>
+                            <li>
+                                T1G
+                                <div class="course-type-p">
+                                    PRESENCIAL
+                                </div>
+                            </li>
+                            <li>
+                                T2G
+                                <div class="course-type-p">
+                                    PRESENCIAL
+                                </div>
+                            </li>
+                            <li>
+                                T3G
+                                <div class="course-type-p">
+                                    PRESENCIAL
+                                </div>
+                            </li>
+                            <li>
+                                T4G
+                                <div class="course-type-p">
+                                    PRESENCIAL
+                                </div>
+                            </li>
+                            <li>
+                                M1F
+                                <div class="course-type-p">
+                                    PRESENCIAL
+                                </div>
+                            </li>
+                            <li>
+                                M2F
+                                <div class="course-type-p">
+                                    PRESENCIAL
+                                </div>
+                            </li>
+                            <li>
+                                M3F
+                                <div class="course-type-p">
+                                    PRESENCIAL
+                                </div>
+                            </li>
+                            <li>
+                                M4F
+                                <div class="course-type-p">
+                                    PRESENCIAL
+                                </div>
+                            </li>
+                            <li>
+                                T1H
+                                <div class="course-type-p">
+                                    PRESENCIAL
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <button class="accordion">Operação e Programação de Impressora 3D</button>
-                <div class="op-about">  
-                    <h2>Turmas</h2>
-                    <ul>
-                        <li>
-                            T2H
-                            <div class="course-type-p">
-                                PRESENCIAL
-                            </div>
-                        </li>
-                        <li>
-                            T3H
-                            <div class="course-type-p">
-                                PRESENCIAL
-                            </div>
-                        </li>
-                    </ul>
+                <div class="the_course">
+                    <button class="accordion">Operação e Programação de Impressora 3D</button>
+                    <div class="op-about">  
+                        <h2>Turmas</h2>
+                        <ul>
+                            <li>
+                                T2H
+                                <div class="course-type-p">
+                                    PRESENCIAL
+                                </div>
+                            </li>
+                            <li>
+                                T3H
+                                <div class="course-type-p">
+                                    PRESENCIAL
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <button class="accordion">Segurança No Trabalho</button>
-                <div class="op-about">  
-                    <h2>Turmas</h2>
-                    <ul>
-                        <li>
-                            T4H
-                            <div class="course-type-d">
-                                A DISTÂNCIA
-                            </div>
-                        </li>
-                        <li>
-                            M1G
-                            <div class="course-type-p">
-                                PRESENCIAL
-                            </div>
-                        </li>
-                        <li>
-                           M2G
-                            <div class="course-type-p">
-                                PRESENCIAL
-                            </div>
-                        </li>
-                        <li>
-                            M3G
-                            <div class="course-type-p">
-                                PRESENCIAL
-                            </div>
-                        </li>
-                    </ul>
+                <div class="the_course">
+                    <button class="accordion">Segurança No Trabalho</button>
+                    <div class="op-about">  
+                        <h2>Turmas</h2>
+                        <ul>
+                            <li>
+                                T4H
+                                <div class="course-type-d">
+                                    A DISTÂNCIA
+                                </div>
+                            </li>
+                            <li>
+                                M1G
+                                <div class="course-type-p">
+                                    PRESENCIAL
+                                </div>
+                            </li>
+                            <li>
+                               M2G
+                                <div class="course-type-p">
+                                    PRESENCIAL
+                                </div>
+                            </li>
+                            <li>
+                                M3G
+                                <div class="course-type-p">
+                                    PRESENCIAL
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <button class="accordion">Lógica de Programação</button>
-                <div class="op-about" style="border-bottom-right-radius: 20px; border-bottom-left-radius: 20px;">  
-                    <h2>Turmas</h2>
-                    <ul>
-                        <li>
-                            M4G
-                            <div class="course-type-p">
-                                PRESENCIAL
-                            </div>
-                        </li>
-                        <li>
-                            T1I
-                            <div class="course-type-p">
-                                PRESENCIAL
-                            </div>
-                        </li>
-                        <li>
-                           T2I
-                            <div class="course-type-d">
-                                A DISTÂNCIA
-                            </div>
-                        </li>
-                        <li>
-                           T3I
-                            <div class="course-type-d">
-                                A DISTÂNCIA
-                            </div>
-                        </li>
-                        <li>
-                           T4I
-                            <div class="course-type-d">
-                                A DISTÂNCIA
-                            </div>
-                        </li>
-                        <li>
-                            M1H
-                            <div class="course-type-d">
-                                A DISTÂNCIA
-                            </div>
-                        </li>
-                    </ul>
+                <div class="the_course">
+                    <button class="accordion">Lógica de Programação</button>
+                    <div class="op-about" style="border-bottom-right-radius: 20px; border-bottom-left-radius: 20px;">  
+                        <h2>Turmas</h2>
+                        <ul>
+                            <li>
+                                M4G
+                                <div class="course-type-p">
+                                    PRESENCIAL
+                                </div>
+                            </li>
+                            <li>
+                                T1I
+                                <div class="course-type-p">
+                                    PRESENCIAL
+                                </div>
+                            </li>
+                            <li>
+                               T2I
+                                <div class="course-type-d">
+                                    A DISTÂNCIA
+                                </div>
+                            </li>
+                            <li>
+                               T3I
+                                <div class="course-type-d">
+                                    A DISTÂNCIA
+                                </div>
+                            </li>
+                            <li>
+                               T4I
+                                <div class="course-type-d">
+                                    A DISTÂNCIA
+                                </div>
+                            </li>
+                            <li>
+                                M1H
+                                <div class="course-type-d">
+                                    A DISTÂNCIA
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                
                 <div class="imag">
                     <h2 class="title" id="sobre">
                         <br><br>
@@ -606,7 +625,25 @@ Telefone: (12) 3609-5701<br> |E-mail:senaitaubate@sp.senai.br
                     panel.style.maxHeight = panel.scrollHeight + "px";
                 } 
             });
-        } 
+        }
+
+        // Função de pesquisar
+        function searching() {
+            var searchBox = document.getElementById("searchBox");
+            var filter = searchBox.value.toUpperCase();
+            var button = document.getElementsByClassName("the_course");
+            var h, txtValue;
+            for(i = 0; i < button.length; i++) {
+                h = button[i].getElementsByTagName("button")[0];
+                txtValue = h.textContent || h.innerHTML;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    button[i].style.display = "";
+                } else {
+                    button[i].style.display = "none";
+                    console.log("oi");
+                }
+            }
+        }
 
     </script>
 </body>
