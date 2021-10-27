@@ -377,7 +377,7 @@ ul{
   border: none;
   outline: none;
   text-align: left;
-  background-color: #383838;
+  background-color: #d83838;
   color: white;
   padding: 17px;
   font-family: 'Oswald', sans-serif;
@@ -385,11 +385,12 @@ ul{
   font-size: 30px;
   border-radius: 20px;
   margin: 5px;
+  margin-left: 20%
 }
 
 
 .accordion:hover {
-  background-color: #636162;
+  background-color: #b44141;
 }
 /*
 .accordion:after {

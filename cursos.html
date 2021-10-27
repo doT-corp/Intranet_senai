@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--isso aqui ta uma bagunça, arrumar-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,27 +14,225 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;500&display=swap" rel="stylesheet"> 
     <link rel="shortcut icon" href="./img/favicon.png">
+    <link rel="stylesheet" href="css/estilo.css">
+        <link rel="shortcut icon" href="img/icon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="jquery-3.5.1.min.js"></script>
+
 </head>
-<body>
-    <header class="menu-top" id="top">
-        <div class="header-1">
-            <div class="logo">
-                <a href="#top">
-                    <img src="./img/senai_pb1.png">
-                </a>
-            </div>
-            <nav>
-                <ul>
-                    <form>
-                        <label for="email">
-                            <b>Buscar:</b>  
-                        </label>
-                        <input type="text" id="searchBox" onkeyup="searching();" name="text"><br><br>
-                    </form>
+<body class="fadein">
+
+        <nav id="n0">
+
+          <div class="close">
+            <a class="fechar" onclick="fecharNav()">&times;</a>
+          </div>
+
+            <p id="titulo">SENAI Félix Guisard</p>
+
+            <ul>
+              <li><a href="cursos.html"><i class="fas fa-file-signature"></i> FIC <i id="arrow" class="fas fa-caret-right"></i></a>
+              </li>
+
+              <li class="bt1"><a href="#"><i class="fas fa-coins"></i> Compras <i id="arrow" class="fas fa-caret-right"></i></a>
+               <ul class="ul1">
+                <li class="sfirst"><a href="doc/Modelo_Contas.pdf" target="_blank">Classificação da Conta Contábil-Despesas</a></li>
+                <li><a href="doc/Modelo_Contas.pdf" target="_blank">Plano de Contas e Centro de Custos CFP 3.01</a></li>
+               </ul>
+              </li>
+
+              <li><a href="Construção.html" target="_self"><i class="fas fa-file-signature"></i> Formulários</a></li>
+
+              <li class="bt3"><a  href="#"><i class="fas fa-table"></i> Horário Escolar <i id="arrow" class="fas fa-caret-right"></i></a>
+               <ul  class="ul3">
+                <li class="sfirst"><a class="bt3_1" href="#">Aprendizagem <i id="arrow" class="fas fa-caret-right"></i></a>
+                 <ul class="ul3_1">
+                  <li class="sfirst"><a href="doc/Modelo_Aprendizagem.pdf" target="_blank">1º Semestre</a></li>
+                  <li><a href="doc/Modelo_Aprendizagem.pdf" target="_blank">2º Semestre</a></li>
+                 </ul>
+                </li>
+                <li><a class="bt3_2" href="#">Técnico <i id="arrow" class="fas fa-caret-right"></i></a>
+                 <ul class="ul3_2">
+                  <li class="sfirst"><a href="doc/Modelo_Aprendizagem.pdf" target="_blank">1º Semestre</a></li>
+                  <li><a href="doc/Modelo_Aprendizagem.pdf">2º Semestre</a></li>
+                 </ul>
+             </li>
+                <li><a class="ajxsub" href="doc/Modelo_Aprendizagem.pdf">Faculdade</a></li>
+               </ul>
+              
+              </li>
+              
+              <li class="bt4"><a href="#"><i class="fas fa-table"></i> Calendário Escolar <i id="arrow" class="fas fa-caret-right"></i></a>
+               <ul  class="ul4">
+                <li class="sfirst"><a href="doc/Calendario_1.pdf" target="_blank">1º Semestre</a></li>
+                <li><a href="doc/Calendario_2.pdf" target="_blank">2º Semestre</a></li>
+               </ul>
+              </li>
+
+              <li class="bt6"><a href="#"><i class="fas fa-file-alt"></i> Proposta Pedagógica <i id="arrow" class="fas fa-caret-right"></i></a>
+               <ul  class="ul6">
+                <li class="sfirst"><a href="doc/Modelo_PropostaPed.pdf" target="_blank">Proposta Pedagógica</a></li>
+               </ul>
+              </li>
+
+              <li><a href="doc/Modelo_PlanoEsc.pdf" target="_blank"><i class="fas fa-file-alt"></i> Plano Escolar</a></li>
+
+              <li><a href="Construção.html" target="_self"><i class="fas fa-bullhorn"></i> Reclamações</a></li>
+
+              <li class="bt10"><a href="#"><i class="fas fa-file-alt"></i> Matriz de Responsabilidade <i id="arrow" class="fas fa-caret-right"></i></a>
+               <ul  class="ul10">
+                <li class="sfirst"><a href="doc/Matriz_Resp.pdf" target="_blank">Matriz de Responsabilidade</a></li>
+                <li><a href="doc/Modelo_ComiteQua.pdf" target="_blank">Comitê da Qualidade</a></li>
+               </ul>
+              </li>
+
+              <li><a href="doc/Modelo_ManualAluno.pdf" target="_blank"><i class="fas fa-graduation-cap"></i> Manual do Aluno</a></li>
+              
+              <li><a href="doc/Slide_Intranet.pdf" target="_blank"><i class="fas fa-network-wired"></i> Intranet SENAI-SP</a></li>
+
+              <li class="bt2"><a href="#"><i class="fas fa-user-shield"></i> Segurança <i id="arrow" class="fas fa-caret-right"></i></a>
+                  <ul class="ul2">
+
+                      <li class="tfirst" style="position: static;"><a href="doc/Modelo_GestaoAmb.pdf" target="_blank"><i class="fas fa-leaf"></i> Significância Ambiental</a></li>
+              
+              <li><a class="bt12" href="#"><i class="fas fa-file-medical-alt"></i> Saúde e Segurança <i id="arrow" class="fas fa-caret-right"></i></a>
+              <ul  class="ul12">
+                <li class="sfirst"><a href="doc/Modelo_PPRA.pdf" target="_blank">PPRA</a></li>
+                <li><a href="doc/Modelo_EPI.pdf" target="_blank">Apresentação de EPI</a></li>
+                <li><a href="doc/Modelo_EPI.pdf" target="_blank">Especificação de EPI</a></li>
+                <li><a href="doc/Modelo_CAT.pdf" target="_blank">CAT</a></li>
                 </ul>
-            </nav>
+              
+              </li>
+              
+              <li><a href="http://intranetdownloads.sesisenaisp.org.br/SitePages/Default.aspx?RootFolder=%2FDownload%2FAssessoria%20de%20Planejamento%20e%20Gest%C3%A3o%20da%20Qualidade%2FGer%C3%AAncia%20de%20Gest%C3%A3o%20da%20Qualidade%20-%20GGQ%2FSENAI%20-%20Requisitos%20Legais&amp;FolderCTID=0x012000D74A27056DF83A47B375C321A275AC59&amp;View={F552DD1E-4564-4B5B-BACA-F2DB9EC4BF24}" target="_self"><i class="fas fa-file-alt"></i> Plan. Situação Legal</a></li>
+              
+              <li><a class="bt13" href="#"><i class="fas fa-running"></i> P A E <i id="arrow" class="fas fa-caret-right"></i></a>
+              <ul  class="ul13">
+                <li class="sfirst"><a class="bt13_1" href="#">Plano de Atendimento Emergêncial <i id="arrow" class="fas fa-caret-right"></i></a>
+                  <ul class="ul13_1">
+                    <li class="sfirst"><a href="doc/Modelo_PAE.pdf" target="_blank">PAE</a></li>
+                    <li><a href="doc/Modelo_PAE.pdf" target="_blank">PAE - Acetileno Incêndio</a></li>
+                    <li><a href="doc/Modelo_PAE.pdf" target="_blank">PAE - Acetileno Vazamento</a></li>
+                    <li><a href="doc/Modelo_PAE.pdf" target="_blank">PAE - Argônio Vazamento</a></li>
+                    <li><a href="doc/Modelo_PAE.pdf" target="_blank">PAE - GLP Incêndio</a></li>
+                    <li><a href="doc/Modelo_PAE.pdf" target="_blank">PAE - GLP Vazamento</a></li>
+                    <li><a href="doc/Modelo_PAE.pdf" target="_blank">PAE - Dielétrico Incêndio</a></li>
+                    <li><a href="doc/Modelo_PAE.pdf" target="_blank">PAE - Dielétrico Vazamento</a></li>
+                    <li><a href="doc/Modelo_PAE.pdf" target="_blank">PAE - Lâmpada Quebrada</a></li>
+                    <li><a href="doc/Modelo_PAE.pdf" target="_blank">PAE - Lubrificante Incêndio</a></li>
+                    <li><a href="doc/Modelo_PAE.pdf" target="_blank">PAE - Lubrificante Vazamento</a></li>
+                    <li><a href="doc/Modelo_PAE.pdf" target="_blank">PAE - Oxigênio Vazamento</a></li>
+                    <li><a href="doc/Modelo_PAE.pdf" target="_blank">PAE - Refrigerante Incêndio</a></li>
+                    <li><a href="doc/Modelo_PAE.pdf" target="_blank">PAE - Refrigerante Vazamento</a></li>
+                    <li><a href="doc/Modelo_PAE.pdf" target="_blank">PAE - Toalhas contaminadas</a></li>
+                    </ul>
+                  </li>
+                <li><a href="doc/Modelo_PlanoEmer.pdf" target="_blank">Relatório de Atendimento Emergêncial</a></li>
+                <li><a href="doc/Modelo_Simulado.pdf" target="_blank">Cronograma de Simulados</a></li>
+                <li><a href="doc/Modelo_Criterios.pdf" target="_blank">Critérios de Avaliação do Simulado</a></li>
+                <li><a href="doc/Modelo_PlanoEmer.pdf" target="_blank">Classsificação de Emergência</a></li>
+                <li><a href="doc/Modelo_Criterios.pdf" target="_blank">Relatório de Avaliação de Simulados</a></li>
+                <li><a href="doc/Modelo_Intervencao.pdf" target="_blank">Plano de Intervenção de Incêndio</a></li>
+                </ul>
+              </li>
+              
+              <li><a class="bt14" href="#"><i class="fas fa-leaf"></i> Metas Ambientais <i id="arrow" class="fas fa-caret-right"></i></a>
+              <ul class="ul14">
+                <li class="sfirst"><a href="doc/Modelo_GestaoAmb.pdf" target="_blank">Caderno de Programas Ambientais</a></li>
+                <li><a href="doc/Modelo_Metas.pdf" target="_blank">Metas</a></li>
+                </ul>
+              </li>
+              
+              <li><a class="bt15" href="#"><i class="fas fa-file-alt"></i> Certificados / Licenças <i id="arrow" class="fas fa-caret-right"></i></a>
+              <ul  class="ul15">
+                <li class="sfirst"><a class="bt15_1" href="#">AVCB <i id="arrow" class="fas fa-caret-right"></i></a>
+                  <ul class="ul15_1">
+                    <li class="sfirst"><a href="#">Em Analise C. B.</a></li>
+                    </ul>
+                  </li>
+                <li><a href="doc/Modelo_PAE.pdf" target="_blank">Licença de Operação</a></li>
+                <li><a href="doc/Modelo_PAE.pdf" target="_blank">Brigada de Incêndio</a></li>
+                <li><a href="doc/Modelo_PAE.pdf" target="_blank">Habite-se do Prédio</a></li>
+                <li><a href="doc/Modelo_PAE.pdf" target="_blank">Álvara de Funcionamento</a></li>
+                <li><a href="Construção.html">Certificado de Detetização</a></li>
+                <li><a href="doc/Modelo_PAE.pdf">Laudo de Potabilidade da Água</a></li>
+                <li><a class="bt15_2" href="#">Laudo de Estanqueidade <i id="arrow" class="fas fa-caret-right"></i></a>
+                  <ul class="ul15_2">
+                    <li class="sfirst"><a href="doc/Modelo_PAE.pdf" target="_blank">Mangueiras de Incêndio</a></li>
+                    </ul>
+                  </li>
+                <li><a href="Construção.html">Analise de Solo</a></li>
+                <li><a href="Construção.html">Vistoria Vigilância Sanitáo</a></li>
+                <li><a href="doc/Modelo_Cadri.pdf" target="_blank">CADRI</a></li>
+                <li><a href="doc/Modelo_Cadri.pdf" target="_blank">CADRI - Lâmpadas</a></li>
+                <li><a href="Construção.html">PCMSO</a></li>
+                <li><a href="Construção.html">Prova Descargas Elétricas</a></li>
+                </ul>
+              </li>
+              
+              <li><a class="bt16" href="#"><i class="fas fa-hard-hat"></i> Procedimentos Operacionais <i id="arrow" class="fas fa-caret-right"></i></a>
+              <ul class="ul16">
+                <li class="sfirst"><a href="doc/Modelo_SO.pdf" target="_blank">Óleos Industriais</a></li>
+                <li><a href="doc/Modelo_SO.pdf" target="_blank">Toalhas</a></li>
+                <li><a href="doc/Modelo_SO.pdf" target="_blank">Lâmpadas</a></li>
+                <li><a href="doc/Modelo_SO.pdf" target="_blank">Coleta Seletiva</a></li>
+                <li><a href="doc/Modelo_SO.pdf" target="_blank">Óleos Comestiveis</a></li>
+                <li><a href="doc/Modelo_SO.pdf" target="_blank">Pilhas</a></li>
+                <li><a href="doc/Modelo_SO.pdf" target="_blank">Materiais</a></li>
+                </ul>
+              </li>
+
+              <li class="tfirst" style="position: static;"><a class="bt17" href="#"><i class="fas fa-hard-hat"></i> CIPA <i id="arrow" class="fas fa-caret-right"></i></a>
+                  <ul class="ul17">
+                      <li class="sfirst"><a class="bt17_1" href="#">Comissão <i id="arrow" class="fas fa-caret-right"></i></a>
+                          <ul class="ul17_1">
+                              <li class="sfirst"><a href="doc/Modelo_AtaPosse.pdf" target="_blank">Ata de Posse</a></li>
+                              <li><a href="doc/Modelo_AtaPosse.pdf target="_blank">Processo Eleitoral</a></li>
+                          </ul>
+                      </li>
+                    <li><a href="Construção.html" target="_self">Acidentes</a></li>
+                    <li><a href="doc/Modelo_Cronograma.pdf" target="_blank">Cronograma</a></li>
+                    <li><a href="doc/Modelo_Cronograma.pdf" target="_blank">Plano de Trabalho</a></li>
+                   </ul>
+              </li>
+
+                  </ul>
+              </li>
+
+              <li class="bt5"><a href="#"><i class="fas fa-graduation-cap"></i> Superior <i id="arrow" class="fas fa-caret-right"></i></a>
+                  <ul class="ul5">
+
+                      <li><a class="bt19" href="#"><i class="fas fa-file-alt"></i> Estágio <i id="arrow" class="fas fa-caret-right"></i></a>
+                          <ul class="ul19">
+                            <li class="sfirst"><a href="doc/Modelo_ManualAluno.pdf" target="_blank">Manual</a></li>
+                            <li><a href="doc/Modelo_ManualAluno.pdf">Lei do Estágio</a></li>
+                          </ul>
+                      </li>
+
+                      <li><a href="#" target="_self"><i class="fas fa-hands-helping"></i> Secretaria</a></li>
+
+                      <li><a href="Construção.html" target="_self"><i class="fas fa-university"></i> Patrimônio</a></li>
+
+                      <li><a href="#" target="_self"><i class="fas fa-people-arrows"></i> Coordenação Pedagógica</a></li>
+
+                  </ul>
+              </li>
+          </ul>
+
+            
+        </nav>
+
+        <div class="mobilemenu" onclick="abrirNav()">
+          <img src="img/menu_bars (2).jpg" alt=""> MENU
+        </div>  
+
+        <div class="main1">
+          <main>
+            <img src="img/BannerSenai3.jpg" />
+          </main>
         </div>
-    </header>
     <!--------lateral-------->
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -41,22 +240,10 @@
         <a href="index.html">Voltar</a>
         <br>
       </div>
-      <div id="main">
-    
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; <b>Menu</b></span>
-      </div>
       <!------Section------->
     <section class="main_2">
         <div class="sobre">
             <h2 class="title" id="sobre">Cursos disponíveis</h2>
-        </div>
-        <div class="lateral_left">
-            <img src="./img/Canto_left (1).png" alt="" align="left" width="180">
-        </div>
-        <div class="lateral_right">
-            <img src="./img/Canto_direita.png" align="right" width="180">
-        </div>
-        <div class="image">
             <!--
                 <div class="myButton">
                         <div class="op1" onclick="courses('op1', 'op1-about')">
@@ -532,74 +719,8 @@
                         </ul>
                     </div>
                 </div>
-                <div class="imag">
-                    <h2 class="title" id="sobre">
-                        <br><br>
-                        Anúncio
-                    </h2>
-                </div>
-                <div class="carrossel">
-                    <ul>
-                        <li>
-                            <img src="./img/imageViewer.png">
-                        </li>
-                        <li>
-                            <img src="./img/you.png">
-                        </li>
-                        <li>
-                            <img src="./img/view.png">
-                        </li>
-                    </ul>
-                </div>
-            </div>
       </section>
-      <!----footer-->
-      <div class="footer">
-        <div class="container">
-            <div class="row1">
-                <div class="footer-col-1">
-                    <h3>
-                        Escola Senai "Felix Guisard"
-                    </h3>
-                    <p>
-                        Av. Independência, 846 - Independência - Taubaté/SP - CEP 12031-001
-Telefone: (12) 3609-5701<br> |E-mail:senaitaubate@sp.senai.br
-                    </p>
-                    <br><br>
-                    <p>
-                        Feito por Victor da Silva Santos, Guilherme Samuel, Diego Augusto, Diego Artur
-                    </p>
-                </div>
-                <div class="footer-col-2">
-                    <a href="#top">
-                        <img src="./img/senai_pb1.png" alt="SENAI">
-                    </a>
-                </div>
-                <div class="footer-col-3">
-                    <h3>
-                        Nos Siga!
-                        <br><br>
-                    </h3>
-                    <ul>
-                        <li>
-                            <a href="https://www.instagram.com/senaitaubate/">
-                                <img src="./img/instagram-icon (1).png">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/senaitaubate">
-                                <img src="./img/001-simbolo-de-aplicativo-do-facebook.png">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/senai_taubate">
-                                <img src="./img/001-twitter.png">
-                            </a>
-                        </li>
-                   </ul>
-                </div>
-            </div>
-        </div>
+      <!----footer inexistente (temporario)-->
     </div>
     <!--javaScript-->
     <script>
@@ -652,5 +773,18 @@ Telefone: (12) 3609-5701<br> |E-mail:senaitaubate@sp.senai.br
         }
 
     </script>
+    <script type="text/javascript">
+
+        function abrirNav(){
+            document.getElementById("n0").style.width="20%";
+        }
+
+        function fecharNav(){
+            document.getElementById("n0").style.width="0px";
+        }
+
+        </script>
+
+        <script type="text/javascript" src="java/script.js"></script>
 </body>
 </html>
