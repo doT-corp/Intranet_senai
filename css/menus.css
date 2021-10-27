@@ -103,10 +103,11 @@ body {
     position: relative;
     line-height: 60px;
     color: #252323;
+    font-family: 'Montserrat', sans-serif;
 }
 .title:after{
     content: '';
-    background: #373435;
+    background: #e01f1f;
     width: 130px;
     height: 5px;
     border-radius: 5px;
@@ -241,7 +242,7 @@ ul{
   height: 250px;
 }
 .carrossel{
-  width: 400px;
+  width: 300px;
   height: 250px;
   outline: 3px solid #373435;
   margin: 50px auto;

@@ -92,11 +92,14 @@ main{
     margin-left: 5%;
 }
 
+.text_menu{
+    font-family: 'Montserrat', sans-serif;
+}
 .mobilemenu{
     margin-left: 9%;
     margin-top: 15px;
     margin-bottom: 5px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
 }
 
 .mobilemenu img{
