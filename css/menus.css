@@ -44,7 +44,9 @@ body {
     font-family: 'Jost', sans-serif;
     transition: background-color .5s;
   }
-  
+  #titulo{
+    font-weight: 800;
+  }
   .sidenav {
     height: 100%;
     width: 0;
@@ -107,7 +109,7 @@ body {
 }
 .title:after{
     content: '';
-    background: #e01f1f;
+    background: rgb(218, 85, 82);
     width: 130px;
     height: 5px;
     border-radius: 5px;
@@ -378,7 +380,7 @@ ul{
   border: none;
   outline: none;
   text-align: left;
-  background-color: #d83838;
+  background-color: rgb(218, 85, 82);
   color: white;
   padding: 17px;
   font-family: 'Oswald', sans-serif;
@@ -451,3 +453,9 @@ ul{
 }
 
 */
+.the_course{
+  font-family: 'Montserrat', sans-serif;
+}
+.the_course h2{
+  margin-top: 2%
+}
